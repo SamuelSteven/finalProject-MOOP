@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pilih_perhitungan_bangun_datar">
+
+    <FrameLayout
+        android:layout_above="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        ></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="156dp"
+        android:layout_height="330dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="persegi"
+            android:text="Persegi"
+            app:backgroundTint="#2196F3"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="persegi_panjang"
+            android:text="Persegi Panjang"
+            app:backgroundTint="#2196F3"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="lingkaran"
+            android:text="lingkaran"
+            app:backgroundTint="#2196F3"></Button>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-9dp"
+        android:layout_weight="1"
+        android:onClick="activity_main"
+        android:text="Back"
+        app:backgroundTint="#2196F3"></Button>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="89dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="234dp"
+        android:layout_marginRight="234dp"
+        android:layout_marginBottom="283dp"
+        android:src="@drawable/square" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="87dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="235dp"
+        android:layout_marginRight="235dp"
+        android:layout_marginBottom="78dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="231dp"
+        android:layout_marginRight="231dp"
+        android:layout_marginBottom="182dp"
+        android:src="@drawable/frame" />
+
+</RelativeLayout>
